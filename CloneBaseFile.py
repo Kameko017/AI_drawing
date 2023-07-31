@@ -1,5 +1,6 @@
 import shutil
 import os
+import subprocess
 
 def check_file_exists(filename, search_path):
     for foldername, _, filenames in os.walk(search_path):
@@ -19,3 +20,6 @@ if not check_file_exists(filename='model_list.json',search_path=search_directory
 if not check_file_exists(filename='extension_list.json',search_path=search_directory):
     source_file = '/content/AI_drawing/extension_list.json'
     shutil.copy(source_file, search_directory)
+
+
+subprocess.run(['git', 'clone','-b', 'v2.4','https://github.com/camenduru/stable-diffusion-webui' ,'/content/camenduru'])
