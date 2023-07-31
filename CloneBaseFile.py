@@ -15,7 +15,7 @@ def check_folder_exists(foldername, search_path):
     return None
 
 search_directory = '/content/drive/MyDrive/AI_drawing'
-if check_folder_exists("AI_drawing","/content/drive/MyDrive/"):
+if check_folder_exists("AI_drawing","/content/drive/MyDrive"):
     os.makedirs(search_directory)
     print('make AI_drawing file')
 
