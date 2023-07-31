@@ -1,4 +1,12 @@
 import shutil
+import os
+
+def check_file_exists(filename, search_path):
+    for foldername, _, filenames in os.walk(search_path):
+        for file in filenames:
+            if file == filename:
+                return os.path.join(foldername, file)
+    return None
 
 search_directory = '/content/drive/MyDrive/AI_drawing'
 
