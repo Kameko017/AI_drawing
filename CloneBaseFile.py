@@ -9,7 +9,8 @@ def check_file_exists(filename, search_path):
     return None
 
 search_directory = '/content/drive/MyDrive/AI_drawing'
-os.makedirs(search_directory, exist_ok=True)
+if not os.path.exists(search_directory):
+    os.makedirs(search_directory)
 
 if not check_file_exists(filename='model_list.json',search_path=search_directory):
     source_file = '/content/AI_drawing/model_list.json'
@@ -18,5 +19,3 @@ if not check_file_exists(filename='model_list.json',search_path=search_directory
 if not check_file_exists(filename='extension_list.json',search_path=search_directory):
     source_file = '/content/AI_drawing/extension_list.json'
     shutil.copy(source_file, search_directory)
-
-
