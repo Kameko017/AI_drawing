@@ -1,0 +1,9 @@
+{
+    "model_List":
+        [
+            {
+                "model_Name":"stable_diffusion_1_5",
+                "download_URL":"https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.ckpt"
+            }
+        ]
+}
