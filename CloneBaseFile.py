@@ -17,13 +17,14 @@ def check_folder_exists(foldername, search_path):
 search_directory = '/content/drive/MyDrive/AI_drawing'
 if check_folder_exists("AI_drawing","/content/drive/MyDrive/"):
     os.makedirs(search_directory)
+    print('make AI_drawing file')
 
 if not check_file_exists(filename='model_list.json',search_path=search_directory):
     source_file = '/content/AI_drawing/model_list.json'
-    shutil.move(source_file, search_directory)
+    shutil.copy(source_file, search_directory)
 
 if not check_file_exists(filename='extension_list.json',search_path=search_directory):
     source_file = '/content/AI_drawing/extension_list.json'
-    shutil.move(source_file, search_directory)
+    shutil.copy(source_file, search_directory)
 
 
