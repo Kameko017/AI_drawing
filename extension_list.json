@@ -1,9 +1,9 @@
 {
-    "extension_list":
-      [
-        {
-          "Name":"A",
-          "URL" :"awd"
-        }
-      ]
-  }
+  "extension_list":
+    [
+      {
+        "Name":"A",
+        "URL" :"awd"
+      }
+    ]
+}
