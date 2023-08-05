@@ -1,6 +1,6 @@
 {
-    "path": [
-        "",
-        "/content/camenduru/extensions"
-    ]
+    "path": {
+        "Model":"",
+        "Extensions":"/content/camenduru/extensions"
+    }
 }
